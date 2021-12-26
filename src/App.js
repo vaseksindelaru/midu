@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import {Note} from "./Note.js";
 import {useState} from "react"
+import Contador from "./componentes/contador";
 
 
 
@@ -26,8 +27,14 @@ console.log(notetoadd)
 
 setxnote(xnote.concat(notetoadd))
 setnewnote('')}
-  return(
+
+
+    
+
+    return(
   <div>
+    <Contador />
+   
     <ol>
       {xnote.map((note)=>{
         return(
@@ -41,6 +48,7 @@ setnewnote('')}
     </form>
   </div>
   )
+  
 }
 
   

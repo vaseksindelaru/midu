@@ -5,5 +5,6 @@ export const Note = ({id,content,date}) => {
   <p>{content}</p>
     </li>
     )}
+    
 
  
